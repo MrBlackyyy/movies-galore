@@ -1,0 +1,78 @@
+.destaques{
+    display: grid;
+    grid-gap: 0.4rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+}
+
+.destaques__principal{
+    background: url(../Images/batman.jpg) center / cover no-repeat;
+    grid-row: 1 / 3;
+    cursor: pointer;
+}
+
+.destaques__secundario:nth-child(2){
+    background: url(../Images/northman.jpg) center / cover no-repeat;
+    cursor: pointer;
+}
+
+.destaques__secundario:nth-child(3){
+    background: url(../Images/everything.jpg) center / cover no-repeat;
+    cursor: pointer;
+}
+ 
+.destaques__secundario:nth-child(4){
+    background: url(../Images/marrowbone.jpg) center / cover no-repeat;
+    cursor: pointer;
+}
+
+.destaques__secundario:nth-child(5){
+    background: url(../Images/gretel.jpg) center / cover no-repeat;
+    cursor: pointer;
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.destaques__titulo{
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: .6rem;
+    color: whitesmoke;
+}
+
+.destaques__categorias{
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item{
+    display: flex;
+    align-items: center;
+    color: #3f3f3f;
+    padding: 1rem;
+    width: 50%;
+    border: 5px solid transparent;
+    transition: 4s;
+}
+
+.destaques__categorias___link:hover{
+    transform: scale(1.05);
+}
+
+.destaques__categorias___link{
+    color: inherit;
+    font-weight: bold;
+}
